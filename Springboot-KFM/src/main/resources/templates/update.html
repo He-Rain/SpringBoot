@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en"xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>修改</title>
+</head>
+<body>
+<hr/>
+    <form action="/blog/update" method="post">
+    <table width="100%" border="1" cellspacing="0" cellpadding="5">
+        <tr>
+            <td align="right">爱好：</td>
+            <td th:if="${blogPojo != null}">
+                <input type="text" name="ah" value="" th:value="${blogPojo.ah}">
+            </td>
+        </tr>
+        <tr>
+            <td align="right">内容：</td>
+            <td th:if="${blogPojo != null}">
+                <textarea name="content" id="editor_id" style="width:700px;height:300px" th:text="${blogPojo.content}"></textarea>
+                <!--隐藏域-->
+                <input type="hidden" name="bid" th:value="${blogPojo.bid}">
+            </td>
+        </tr>
+        <td>
+        <input type="submit" value="修改"/>
+        </td>
+            </tr>
+            </tbody>
+        </table>
+    </table>
+</form>
+</body>
+</html>

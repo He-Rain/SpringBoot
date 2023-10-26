@@ -1,0 +1,18 @@
+person:
+  name: heyuming${random.uuid}
+  age:  ${random.int}
+  happy: false
+  birth: 2022/10/3
+  hello: haayy
+  maps: {k1: v1,k2:v2}
+  lists:
+    -code
+    -music
+    - girl
+  dog:
+    name: ${person.hello:hello}_旺财
+    age: 3
+dog:
+  first_name: 阿黄
+  age: 3
+

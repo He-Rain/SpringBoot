@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    username: root
+    password: hhnwdzsv
+    url: jdbc:mysql://localhost:3306/mybatis?useSSL=true&characterEncoding=utf-8&useUnicode=true&serverTimezone=UTC
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      filter:
+        log4j:
+          enabled: true
+          stat-view-servlet:
+#            enabled: true
+        stat:
+          enabled: true
+        wall:
+          enabled: true

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 th:text="${#session.getAttribute('user').username}" ></h1>
+<hr/>
+<form action="/blog/send" method="post">
+    <table width="100%" border="1" cellspacing="0" cellpadding="5">
+        <tr>
+            <td align="right">爱好：</td>
+            <td>
+                <input type="text" name="ah" value="">
+            </td>
+        </tr>
+        <tr>
+            <td align="right">内容：</td>
+
+            <td>
+                <textarea name="content" id="editor_id"></textarea>
+                <!--隐藏域-->
+                <input type="hidden" name="uid" th:value="${#session.getAttribute('user').uid}">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="保存">
+                <a th:href="@{/blog/select(username=${#session.getAttribute('user').username})}">查看</a>
+            </td>
+        </tr>
+        <table width=100% border="1" cellspacing="0" cellpadding="5">
+            <tr>
+                <th>编号</th>
+                <th>爱好</th>
+                <th>内容</th>
+                <th>作者</th>
+                <th>制作</th>
+            </tr>
+            <tbody th:if="${userPojo != null}">
+            <tr th:each="blogPojo:${userPojo.blogList}">
+                <td th:text="${blogPojo.bid}"></td>
+                <td th:text="${blogPojo.ah}"></td>
+                <td th:utext="${blogPojo.content}"></td>
+                <td th:text="${userPojo.username}"></td>
+                <td><a th:href="@{/blog/selectone(bid=${blogPojo.bid})}">修改</a>&nbsp;&nbsp;&nbsp;<a th:href="@{/blog/delete(bid=${blogPojo.bid})}">删除</a></td>
+            </tr>
+            </tbody>
+        </table>
+    </table>
+</form>
+</body>
+</html>

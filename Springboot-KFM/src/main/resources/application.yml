@@ -1,0 +1,13 @@
+#配置端口
+server:
+  port: 90
+#关闭引擎
+spring:
+  thymeleaf:
+    cache: false
+  #配置数据源
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?useSSL=true&useUnicode=true&serverTimezone=UTC
+    username: root
+    password: hhnwdzsv

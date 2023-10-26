@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>首页2</h2>
+<div>${msg}</div>
+<!--所有的html元素都可以被thymeleaf替换接管：命名空间th:元素名-->
+<!--将数据渲染到标签体中-->
+<div th:text="${msg}"></div>
+<h1 th:text="${msg}"></h1>
+<div th:utext="${msg}"></div>
+<hr/>
+<div th:each="user:${users}" th:text="${users}"></div>
+<div th:each="user:${users}" th:text="${user}"></div>
+<div th:each="user:${users}" >[[${user}]]</div>
+</body>
+</html>

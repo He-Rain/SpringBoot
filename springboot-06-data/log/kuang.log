@@ -1,0 +1,62 @@
+[DEBUG][2023-03-20][druid.sql.Connection]{conn-10001,procId-15} connected
+[DEBUG][2023-03-20][druid.sql.Statement]{conn-10001, stmt-20000} created
+[DEBUG][2023-03-20][druid.sql.Statement]{conn-10001, stmt-20000, rs-50000} query executed. 178.6785 millis. SELECT 1
+[DEBUG][2023-03-20][druid.sql.ResultSet]{conn-10001, stmt-20000, rs-50000} open
+[DEBUG][2023-03-20][druid.sql.ResultSet]{conn-10001, stmt-20000, rs-50000} Header: [1]
+[DEBUG][2023-03-20][druid.sql.ResultSet]{conn-10001, stmt-20000, rs-50000} closed
+[DEBUG][2023-03-20][druid.sql.Statement]{conn-10001, stmt-20000} closed
+[DEBUG][2023-03-20][druid.sql.Connection]{conn-10001} pool-connect
+[DEBUG][2023-03-20][druid.sql.Connection]{conn-10001} pool-recycle
+[DEBUG][2023-03-20][druid.sql.Connection]{conn-10001} closed
+[DEBUG][2023-04-07][druid.sql.Connection]{conn-10001,procId-12} connected
+[DEBUG][2023-04-07][druid.sql.Statement]{conn-10001, stmt-20000} created
+[DEBUG][2023-04-07][druid.sql.Statement]{conn-10001, stmt-20000, rs-50000} query executed. 148.8698 millis. SELECT 1
+[DEBUG][2023-04-07][druid.sql.ResultSet]{conn-10001, stmt-20000, rs-50000} open
+[DEBUG][2023-04-07][druid.sql.ResultSet]{conn-10001, stmt-20000, rs-50000} Header: [1]
+[DEBUG][2023-04-07][druid.sql.ResultSet]{conn-10001, stmt-20000, rs-50000} closed
+[DEBUG][2023-04-07][druid.sql.Statement]{conn-10001, stmt-20000} closed
+[DEBUG][2023-04-07][druid.sql.Connection]{conn-10001} pool-connect
+[DEBUG][2023-04-07][druid.sql.Connection]{conn-10001} pool-recycle
+[DEBUG][2023-04-07][druid.sql.Connection]{conn-10001} closed
+[DEBUG][2023-09-28][druid.sql.Connection]{conn-10001,procId-436} connected
+[DEBUG][2023-09-28][druid.sql.Statement]{conn-10001, stmt-20000} created
+[DEBUG][2023-09-28][druid.sql.Statement]{conn-10001, stmt-20000, rs-50000} query executed. 144.0813 millis. SELECT 1
+[DEBUG][2023-09-28][druid.sql.ResultSet]{conn-10001, stmt-20000, rs-50000} open
+[DEBUG][2023-09-28][druid.sql.ResultSet]{conn-10001, stmt-20000, rs-50000} Header: [1]
+[DEBUG][2023-09-28][druid.sql.ResultSet]{conn-10001, stmt-20000, rs-50000} closed
+[DEBUG][2023-09-28][druid.sql.Statement]{conn-10001, stmt-20000} closed
+[DEBUG][2023-09-28][druid.sql.Connection]{conn-10001} pool-connect
+[DEBUG][2023-09-28][druid.sql.Statement]{conn-10001, stmt-20001} created
+[DEBUG][2023-09-28][druid.sql.Statement]{conn-10001, stmt-20001, rs-50001} query executed. 58.9016 millis. select * from user
+[DEBUG][2023-09-28][druid.sql.ResultSet]{conn-10001, stmt-20001, rs-50001} open
+[DEBUG][2023-09-28][druid.sql.ResultSet]{conn-10001, stmt-20001, rs-50001} Header: [id, name, pwd]
+[DEBUG][2023-09-28][druid.sql.ResultSet]{conn-10001, stmt-20001, rs-50001} Result: [1, 狂神, 123456]
+[DEBUG][2023-09-28][druid.sql.ResultSet]{conn-10001, stmt-20001, rs-50001} Result: [2, 张三, 123456]
+[DEBUG][2023-09-28][druid.sql.ResultSet]{conn-10001, stmt-20001, rs-50001} Result: [3, 李四, 123456]
+[DEBUG][2023-09-28][druid.sql.ResultSet]{conn-10001, stmt-20001, rs-50001} Result: [4, 李五, 123456]
+[DEBUG][2023-09-28][druid.sql.ResultSet]{conn-10001, stmt-20001, rs-50001} Result: [5, null, 123456]
+[DEBUG][2023-09-28][druid.sql.ResultSet]{conn-10001, stmt-20001, rs-50001} closed
+[DEBUG][2023-09-28][druid.sql.Statement]{conn-10001, stmt-20001} closed
+[DEBUG][2023-09-28][druid.sql.Connection]{conn-10001} pool-recycle
+[DEBUG][2023-09-28][druid.sql.Connection]{conn-10001} closed
+[DEBUG][2023-09-28][druid.sql.Connection]{conn-10002,procId-471} connected
+[DEBUG][2023-09-28][druid.sql.Statement]{conn-10002, stmt-20002} created
+[DEBUG][2023-09-28][druid.sql.Statement]{conn-10002, stmt-20002, rs-50002} query executed. 20.0412 millis. SELECT 1
+[DEBUG][2023-09-28][druid.sql.ResultSet]{conn-10002, stmt-20002, rs-50002} open
+[DEBUG][2023-09-28][druid.sql.ResultSet]{conn-10002, stmt-20002, rs-50002} Header: [1]
+[DEBUG][2023-09-28][druid.sql.ResultSet]{conn-10002, stmt-20002, rs-50002} closed
+[DEBUG][2023-09-28][druid.sql.Statement]{conn-10002, stmt-20002} closed
+[DEBUG][2023-09-28][druid.sql.Connection]{conn-10002} pool-connect
+[DEBUG][2023-09-28][druid.sql.Statement]{conn-10002, stmt-20003} created
+[DEBUG][2023-09-28][druid.sql.Statement]{conn-10002, stmt-20003, rs-50003} query executed. 36.3712 millis. select * from user
+[DEBUG][2023-09-28][druid.sql.ResultSet]{conn-10002, stmt-20003, rs-50003} open
+[DEBUG][2023-09-28][druid.sql.ResultSet]{conn-10002, stmt-20003, rs-50003} Header: [id, name, pwd]
+[DEBUG][2023-09-28][druid.sql.ResultSet]{conn-10002, stmt-20003, rs-50003} Result: [1, 狂神, 123456]
+[DEBUG][2023-09-28][druid.sql.ResultSet]{conn-10002, stmt-20003, rs-50003} Result: [2, 张三, 123456]
+[DEBUG][2023-09-28][druid.sql.ResultSet]{conn-10002, stmt-20003, rs-50003} Result: [3, 李四, 123456]
+[DEBUG][2023-09-28][druid.sql.ResultSet]{conn-10002, stmt-20003, rs-50003} Result: [4, 李五, 123456]
+[DEBUG][2023-09-28][druid.sql.ResultSet]{conn-10002, stmt-20003, rs-50003} Result: [5, null, 123456]
+[DEBUG][2023-09-28][druid.sql.ResultSet]{conn-10002, stmt-20003, rs-50003} closed
+[DEBUG][2023-09-28][druid.sql.Statement]{conn-10002, stmt-20003} closed
+[DEBUG][2023-09-28][druid.sql.Connection]{conn-10002} pool-recycle
+[DEBUG][2023-09-28][druid.sql.Connection]{conn-10002} closed

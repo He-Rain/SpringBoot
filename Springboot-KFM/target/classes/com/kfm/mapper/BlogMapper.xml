@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kfm.mapper.BlogMapper">
+    <!--发布博客-->
+    <insert id="sendBlog" parameterType="com.kfm.entity.BlogPojo">
+        INSERT INTO t_blog(uid,content,ah)VALUES(#{uid},#{content},#{ah})
+    </insert>
+    <!--根据用户名查询博客-->
+    <resultMap id="userAndBlogMap" type="com.kfm.entity.UserPojo">
+        <id property="uid" column="uid"/>
+        <result property="username" column="username"/>
+        <collection property="blogList" javaType="list" ofType="com.kfm.entity.BlogPojo">
+            <id property="bid" column="bid"/>
+            <result property="content" column="content"/>
+            <result property="ah" column="ah"/>
+        </collection>
+    </resultMap>
+    <select id="selectBlogByUsername" parameterType="String" resultMap="userAndBlogMap">
+        SELECT * FROM t_user,t_blog WHERE t_user.uid = t_blog.uid AND username = #{username}
+    </select>
+    <!--根据bid查询博客-->
+    <select id="selectBlogById" parameterType="int" resultType="com.kfm.entity.BlogPojo">
+        SELECT * FROM t_blog WHERE bid = #{bid}
+    </select>
+    <!--根据bid修改博客-->
+    <update id="updateBlogById" parameterType="com.kfm.entity.BlogPojo">
+        UPDATE t_blog SET ah = #{ah},content = #{content} WHERE bid = #{bid}
+    </update>
+    <!--根据必读删除博客-->
+    <delete id="deleteBlogById" parameterType="int">
+        DELETE FROM t_blog WHERE bid = #{bid}
+    </delete>
+</mapper>

@@ -1,0 +1,62 @@
+{
+  "groups": [
+    {
+      "name": "dog",
+      "type": "com.kuang.poro.DogTwo",
+      "sourceType": "com.kuang.poro.DogTwo"
+    },
+    {
+      "name": "person",
+      "type": "com.kuang.poro.Person",
+      "sourceType": "com.kuang.poro.Person"
+    }
+  ],
+  "properties": [
+    {
+      "name": "dog.age",
+      "type": "java.lang.Integer",
+      "sourceType": "com.kuang.poro.DogTwo"
+    },
+    {
+      "name": "dog.first-name",
+      "type": "java.lang.String",
+      "sourceType": "com.kuang.poro.DogTwo"
+    },
+    {
+      "name": "person.age",
+      "type": "java.lang.Integer",
+      "sourceType": "com.kuang.poro.Person"
+    },
+    {
+      "name": "person.birth",
+      "type": "java.util.Date",
+      "sourceType": "com.kuang.poro.Person"
+    },
+    {
+      "name": "person.dog",
+      "type": "com.kuang.poro.Dog",
+      "sourceType": "com.kuang.poro.Person"
+    },
+    {
+      "name": "person.happy",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.kuang.poro.Person"
+    },
+    {
+      "name": "person.lists",
+      "type": "java.util.List<java.lang.Object>",
+      "sourceType": "com.kuang.poro.Person"
+    },
+    {
+      "name": "person.maps",
+      "type": "java.util.Map<java.lang.String,java.lang.Object>",
+      "sourceType": "com.kuang.poro.Person"
+    },
+    {
+      "name": "person.name",
+      "type": "java.lang.String",
+      "sourceType": "com.kuang.poro.Person"
+    }
+  ],
+  "hints": []
+}
